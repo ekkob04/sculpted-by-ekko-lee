@@ -354,4 +354,8 @@ footer{background:var(--cream-alt);padding:64px 0 32px;border-top:1px solid var(
   .pricing-grid{grid-template-columns:1fr;}
   .pricing-col{border-left:none;border-top:1px solid var(--line);}
   .pricing-col:first-child{border-top:none;}
+  /* In-person session packages: featured package jumps to the front of the
+     stack on small screens, regardless of its position in the desktop grid. */
+  #in-person-pricing .pricing-col.featured{order:-1;border-top:none;}
+  #in-person-pricing .pricing-col:not(.featured){border-top:1px solid var(--line);}
 }
