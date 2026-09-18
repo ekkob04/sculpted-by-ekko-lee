@@ -281,6 +281,7 @@ footer{background:var(--cream-alt);padding:64px 0 32px;border-top:1px solid var(
   background:linear-gradient(180deg,var(--cream-alt),var(--cream));
 }
 .offer-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:28px;margin-top:56px;}
+.offer-grid.cols-3{grid-template-columns:repeat(3,1fr);}
 .offer-card{
   background:var(--cream);border:1px solid var(--line);border-radius:6px;
   padding:44px 36px;position:relative;display:flex;flex-direction:column;
